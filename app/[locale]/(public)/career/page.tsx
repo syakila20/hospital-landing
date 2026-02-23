@@ -6,6 +6,7 @@ import SvgArrow from "@/app/components/Icon/Arrow";
 import Modal from "@/app/components/Modal/Modal";
 import FilterPill from "@/app/components/PillCheckbox/FiterPill";
 import { dummyJobs, dummyJobsCategory, IDummyJob } from "@/app/dummyData";
+import { normalizeFilter } from "@/app/library/normalizeFilter";
 import { usePaginationFilter } from "@/app/library/usePagination";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -36,24 +37,20 @@ export default function CareersPage() {
     data: dummyJobs,
     limit: 10,
     filterFn: (item, filters) => {
-      console.log("??", filters);
-      return dummyJobs.includes(filte);
+      const selectedTags = normalizeFilter(filters.tag);
+
+      if (!selectedTags.length) return true;
+
+      return item.tags.some((tag) => selectedTags.includes(tag));
     },
   });
 
   // const [selectedSpecialties, setSelectedSpecialties] = useState<string[]>([]);
   const [selectedData, setSelectedData] = useState<IDummyJob>();
   const [isOpen, setIsopen] = useState<boolean>(false);
-  // const filteredJobs = dummyJobs.filter((job) => {
-  //   const matchSpecialty =
-  //     selectedSpecialties.length === 0 ||
-  //     job.tags.some((tag) => selectedSpecialties.includes(tag));
-
-  //   return matchSpecialty;
-  // });
 
   const toggleModal = () => setIsopen((prevState) => !prevState);
-
+  console.log("??filtersxx", normalizeFilter(filters?.tag), filters);
   return (
     <main className="bg-linear-to-br from-fuchsia-50 to-teal-50 min-h-screen pt-20">
       <div className="mx-auto max-w-7xl px-4 py-20">
@@ -99,7 +96,6 @@ export default function CareersPage() {
           </p>
         </motion.div>
 
-        {/* Category Filters */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -107,27 +103,14 @@ export default function CareersPage() {
           className="flex flex-wrap gap-3 mb-12"
         >
           <FilterPill
-            selected={[]}
-            onChange={(v) => handleFilterChange("tag", v?.toString())}
+            selected={normalizeFilter(filters?.tag)}
+            onChange={(v) => handleFilterChange("tag", v)}
             arrPill={dummyJobsCategory as []}
           />
-          {/* <FilterPill
-                    selected={
-                      filters.specialty
-                        ? (Array.isArray(filters.specialty)
-                            ? filters.specialty
-                            : [filters.specialty]
-                          ).map(Number)
-                        : []
-                    }
-                    onChange={(v) => handleFilterChange("specialty", v?.toString())}
-                    arrPill={arrPill}
-                  /> */}
         </motion.div>
 
         <hr className="border-neutral-300 mb-10" />
 
-        {/* Job Listings */}
         <div className="space-y-10">
           {jobs.map((job, index) => (
             <motion.div
@@ -175,31 +158,4 @@ export default function CareersPage() {
       </div>
     </main>
   );
-}
-{
-  /* <div
-  key={job.title}
-  className="flex flex-col md:flex-row md:items-center md:justify-between gap-6"
->
-  <div>
-    <h2 className="text-2xl font-semibold mb-2">{job.title}</h2>
-    <p className="text-neutral-600 mb-4">{job.description}</p>
-
-    <div className="flex gap-3">
-      {job.tags.map((tag) => (
-        <span
-          key={tag}
-          className="text-sm px-3 py-1 border border-neutral-400 rounded-full"
-        >
-          {tag}
-        </span>
-      ))}
-    </div>
-  </div>
-
-  <button className="text-lg font-medium hover:underline flex items-center gap-2">
-    Apply
-    <span>↗</span>
-  </button>
-</div>; */
 }

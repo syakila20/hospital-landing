@@ -31,17 +31,23 @@
 //   );
 // }
 import { Link, usePathname } from "@/i18n/navigation";
+import SortDropdown from "../Sort/Sort";
+import SvgWorld from "../Icon/World";
 
 export default function LanguageSwitcherLinks() {
   const pathname = usePathname();
   return (
     <div className="flex gap-2">
-      <Link href={pathname} locale="en">
-        🇺🇸 English
-      </Link>
-      <Link href={pathname} locale="id">
-        🇮🇩 Indonesia
-      </Link>
+      <SortDropdown icon={<SvgWorld />}>
+        <div className="flex flex-col gap-2 px-2 w-15 text-center justify-center py-2 text-slate-700 text-sm">
+          <Link href={pathname} locale="en" className="hover:text-slate-700">
+            🇺🇸 Eng
+          </Link>
+          <Link href={pathname} locale="id" className="hover:text-slate-700">
+            🇮🇩 Ind
+          </Link>
+        </div>
+      </SortDropdown>
     </div>
   );
 }
