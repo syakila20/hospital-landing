@@ -8,12 +8,28 @@ import FilterPill from "@/app/components/PillCheckbox/FiterPill";
 import { dummyJobs, dummyJobsCategory, IDummyJob } from "@/app/dummyData";
 import { normalizeFilter } from "@/app/library/normalizeFilter";
 import { usePaginationFilter } from "@/app/library/usePagination";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { useState } from "react";
 
+const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.1,
+      duration: 0.6,
+      ease: "easeOut" as const,
+    },
+  }),
+};
 export default function CareersPage() {
   const {
     items: jobs,
+    page,
+    hasNext,
+    hasPrev,
+    handlePageChange,
     filters,
     handleFilterChange,
   } = usePaginationFilter({
@@ -99,18 +115,7 @@ export default function CareersPage() {
             <motion.div
               key={job.title}
               custom={index}
-              variants={{
-                hidden: { opacity: 0, y: 30 },
-                visible: (i: number) => ({
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    delay: i * 0.1,
-                    duration: 0.6,
-                    ease: "easeOut",
-                  },
-                }),
-              }}
+              variants={fadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
