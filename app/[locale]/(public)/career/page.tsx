@@ -11,26 +11,9 @@ import { usePaginationFilter } from "@/app/library/usePagination";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.1,
-      duration: 0.6,
-      ease: "easeOut",
-    },
-  }),
-};
-
 export default function CareersPage() {
   const {
     items: jobs,
-    page,
-    hasNext,
-    hasPrev,
-    handlePageChange,
     filters,
     handleFilterChange,
   } = usePaginationFilter({
@@ -116,7 +99,18 @@ export default function CareersPage() {
             <motion.div
               key={job.title}
               custom={index}
-              variants={fadeUp}
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: (i: number) => ({
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    delay: i * 0.1,
+                    duration: 0.6,
+                    ease: "easeOut",
+                  },
+                }),
+              }}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}

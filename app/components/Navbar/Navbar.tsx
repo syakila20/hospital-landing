@@ -8,21 +8,6 @@ import Image from "next/image";
 import { useMediaQuery } from "@/app/library/useMediaQuery";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "../SwitchLanguage/LanguageSwitcher";
-const menuVariants = {
-  hidden: { opacity: 0, y: -10, scale: 0.98 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: { duration: 0.25, ease: "easeOut" },
-  },
-  exit: {
-    opacity: 0,
-    y: -5,
-    scale: 0.98,
-    transition: { duration: 0.2, ease: "easeIn" },
-  },
-};
 
 const itemVariants = {
   hidden: { opacity: 0, y: -4 },
@@ -215,7 +200,21 @@ export default function Navbar() {
       <AnimatePresence>
         {open && (
           <motion.div
-            variants={menuVariants}
+            variants={{
+              hidden: { opacity: 0, y: -10, scale: 0.98 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                transition: { duration: 0.25, ease: "easeOut" },
+              },
+              exit: {
+                opacity: 0,
+                y: -5,
+                scale: 0.98,
+                transition: { duration: 0.2, ease: "easeIn" },
+              },
+            }}
             initial="hidden"
             animate="visible"
             exit="exit"
