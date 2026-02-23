@@ -1,7 +1,10 @@
 "use client";
+import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 
 const Appointment = () => {
+  const t = useTranslations();
+
   const [copied, setCopied] = useState(false);
   const phoneNumber = "1-900-129";
 
@@ -26,14 +29,13 @@ const Appointment = () => {
             </h2>
 
             <h1 className="text-2xl md:text-3xl font-semibold leading-tight">
-              Appointment & Medical Concierge Center
+              {t("appointment")}
             </h1>
 
             <p className="text-white/85 text-sm md:text-base">
-              24/7 Online Booking Available <br />
-              <span className="text-white/70">
-                Layanan Booking Mandiri 24 Jam melalui Website
-              </span>
+              {t("phone_service_hours")}
+              <br />
+              <span className="text-white/70">{t("online_booking")}</span>
             </p>
           </div>
 

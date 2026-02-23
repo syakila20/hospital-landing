@@ -109,7 +109,7 @@ export default function Navbar() {
 
       {/* MAIN NAV */}
       <motion.nav
-        className={`fixed top-12 left-0 w-full z-40 transition-all 
+        className={`fixed top-12 left-0 w-full z-20 transition-all 
           ${isSolid || isNotHome ? "bg-white/40 backdrop-blur-3xl shadow-lg outline outline-white/55" : "bg-transparent"}
         `}
       >

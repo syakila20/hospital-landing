@@ -8,6 +8,7 @@ import Pagination from "@/app/components/Pagination/Pagination";
 import DoctorCard from "@/app/components/CardDoctor/CardDoctor";
 import SortDropdown from "@/app/components/Sort/Sort";
 import SortData from "./SortData";
+import SvgSort from "@/app/components/Icon/Sort";
 
 interface IListDoctors {
   showSearch?: boolean;
@@ -86,7 +87,7 @@ const ListDoctors = ({ showSearch }: IListDoctors) => {
           arrPill={arrPill as []}
         />
         <div className="pr-2">
-          <SortDropdown>
+          <SortDropdown title="sort" icon={<SvgSort />}>
             <SortData
               option={[{ key: 1, label: "Name", value: "name" }]}
               onChange={(val, order) => handleSortChange(val, order)}

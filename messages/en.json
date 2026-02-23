@@ -47,7 +47,7 @@
       "description": "Get health tips, wellness advice, and the latest medical updates from experts to help you make informed choices and live healthier every day."
     },
     "doctor": {
-       "title": "Find Your Trusted Doctor",
+       "title": "Find Doctor",
       "highlight": "Today",
       "description": "We help you connect with caring, trusted medical professionals so every visit feels safe and reassuring."
     },
@@ -80,5 +80,8 @@
     "18": "Hematology",
     "19": "Endocrinology",
     "20": "Nephrology"
-  }
+  },
+  "appointment": "Appointment & Medical Concierge Center",
+  "phone_service_hours": "Phone Service Operating Hours 06:00 - 22:00 WIB",
+  "online_booking": "24-Hour Self-Service Booking via Website"
 }

@@ -181,11 +181,8 @@ export const blogsDummy = [
 ];
 
 export const dummyJobsCategory = [
-  { value: "medical", label: "Medical" },
-  { value: "nursing", label: "Nursing" },
-  { value: "administration", label: "administration" },
-  { value: "laboratory", label: "Laboratory" },
-  { value: "supportStaff", label: "SupportStaff" },
+  { value: "Cardiologist", label: "Cardiologist" },
+  { value: "Nursing", label: "Nursing" },
 ];
 
 export interface IDummyJob {
@@ -236,7 +233,7 @@ export const dummyJobs: IDummyJob[] = [
     description:
       "We are seeking an experienced Consultant Cardiologist to diagnose and manage cardiovascular diseases in our modern facility.",
 
-    tags: ["Full-time", "Senior Level", "On-site"],
+    tags: ["Full-time", "Senior Level", "On-site", "Cardiologist"],
 
     company: {
       name: "Harapan Sehat Hospital",

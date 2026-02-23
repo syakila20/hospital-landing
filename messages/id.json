@@ -47,7 +47,7 @@
       "description": "Dapatkan tips kesehatan, saran gaya hidup, dan informasi medis terbaru dari para ahli untuk membantu Anda membuat pilihan tepat dan menjalani hidup lebih sehat setiap hari."
     },
     "doctor": {
-      "title": "Temukan Dokter yang Tepat",
+      "title": "Temukan Dokter",
       "highlight": "untuk Anda",
       "description": "Kami hadir untuk membantu Anda menemukan tenaga medis yang peduli dan tepercaya, agar setiap kunjungan terasa nyaman dan aman."
     },
@@ -80,5 +80,8 @@
     "18": "Hematologi",
     "19": "Endokrin",
     "20": "Ginjal"
-  }
+  },
+  "appointment": "Pusat Janji Temu & Layanan Concierge Medis",
+  "phone_service_hours": "Jam Operasional Layanan Telepon 06:00 - 22.00 WIB",
+  "online_booking": "Layanan Booking Mandiri 24 jam via Website"
 }

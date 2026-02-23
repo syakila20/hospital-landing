@@ -1,15 +1,21 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { JSX, useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SvgSort from "../Icon/Sort";
 import clsx from "clsx";
 
 interface SortDropdownProps {
   children: React.ReactNode;
+  title?: string;
+  icon?: JSX.Element;
 }
 
-export default function SortDropdown({ children }: SortDropdownProps) {
+export default function SortDropdown({
+  children,
+  title,
+  icon,
+}: SortDropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   // const selectedOption = options.find((opt) => opt.value === value);
@@ -29,19 +35,17 @@ export default function SortDropdown({ children }: SortDropdownProps) {
   }, []);
 
   return (
-    <div ref={dropdownRef} className="relative inline-block text-left">
+    <div ref={dropdownRef} className="relative inline-block text-left z-50">
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
         className={clsx(
-          "px-3 py-2 rounded-full font-medium shadow-sm text-xs lg:text-sm md:text-sm flex gap-1 hover:cursor-pointer",
+          "px-2 py-2 rounded-full font-medium shadow-sm text-xs lg:text-sm md:text-sm flex gap-1 hover:cursor-pointer",
           isOpen ? "bg-[#1d4ed8] text-white" : "bg-white text-slate-500",
         )}
       >
-        Sort
-        <span className="flex items-center gap-2">
-          <SvgSort />
-        </span>
+        {title}
+        {icon && <span className="flex items-center gap-2">{icon}</span>}
       </button>
 
       {/* 🔹 Animated Dropdown */}
@@ -52,7 +56,7 @@ export default function SortDropdown({ children }: SortDropdownProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.15 }}
-            className="absolute right-0 top-10 z-10 mt-1 bg-white border border-gray-200 rounded-md shadow-lg"
+            className="absolute right-0 top-10 z-50 mt-1 bg-white border border-gray-200 rounded-md shadow-lg"
           >
             {children}
           </motion.div>
