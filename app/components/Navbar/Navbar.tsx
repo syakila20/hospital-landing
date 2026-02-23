@@ -41,7 +41,7 @@ export default function Navbar() {
   const [isSolid, setSolid] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeSub, setActiveSub] = useState<number | null>(null);
-  const timeoutRef = useRef(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const { isMobile } = useMediaQuery();
   const closeModal = () => {
     setOpen(false);

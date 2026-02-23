@@ -355,6 +355,7 @@ export interface Doctor {
   id: number;
   name: string;
   specialtyId: string;
+  specialty: string;
   location: string;
   isOnline: boolean;
   experience: string;
