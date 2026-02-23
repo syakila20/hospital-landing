@@ -1,0 +1,84 @@
+{
+   "brand": {
+    "hospitalName": "Sehat Sentosa Hospital",
+    "tagline": "Providing safe, professional healthcare services focused on patient safety."
+  },
+  "sections": {
+    "servicesTitle": "Services",
+    "informationTitle": "Information",
+    "contactTitle": "Contact Us"
+  },
+  "services": {
+    "outpatient": "Outpatient Care",
+    "inpatient": "Inpatient Care",
+    "emergency": "24-Hour Emergency Unit",
+    "laboratory": "Laboratory",
+    "pharmacy": "Pharmacy"
+  },
+  "information": {
+    "onlineRegistration": "Online Registration",
+    "doctorSchedule": "Doctor Schedule",
+    "bpjs": "BPJS Health Insurance",
+    "patientRights": "Patient Rights & Responsibilities"
+  },
+  "contact": {
+    "address": "Jl. Kesehatan No. 10, Jakarta",
+    "phone": "(021) 1234 5678",
+    "email": "info@rssehatsentosa.id",
+    "emergencyLabel": "24-Hour ER & Ambulance"
+  },
+   "navbar": {
+    "about": "About Us",
+    "blog": "Blog",
+    "career": "Career",
+    "contact": "Contact",
+    "customerCare": "Customer Care",
+    "hospitalLocation": "Hospital Location",
+    "emergency": "Emergency Service",
+    "findDoctor": "Find Doctor",
+    "mcu": "MCU Packages"
+  },
+   "trustedPartners": {
+      "title": "Our Trusted Partners",
+      "description": "We collaborate with leading insurance providers, corporate partners, and healthcare institutions to ensure accessible, high-quality, and reliable medical services for every patient we serve."
+    },
+  "blog": {
+      "title": "Health Blog",
+      "description": "Get health tips, wellness advice, and the latest medical updates from experts to help you make informed choices and live healthier every day."
+    },
+    "doctor": {
+       "title": "Find Your Trusted Doctor",
+      "highlight": "Today",
+      "description": "We help you connect with caring, trusted medical professionals so every visit feels safe and reassuring."
+    },
+    "career": {
+      "title": "Join Our Team",
+      "description": "Be part of a compassionate team dedicated to providing the best care for every patient. We value teamwork, integrity, and innovation because every action we take matters to those we serve."
+    },
+    "partners": {
+      "title": "Our Partners",
+      "description": "We collaborate with leading insurance providers, corporate partners, and healthcare institutions to ensure accessible, high-quality, and reliable medical services for every patient we serve."
+    },
+     "specialties": {
+    "1": "Pediatrics",
+    "2": "Cardiology",
+    "3": "Dermatology",
+    "4": "Neurology",
+    "5": "Dentistry",
+    "6": "Ophthalmology",
+    "7": "ENT",
+    "8": "Pulmonology",
+    "9": "Surgery",
+    "10": "Obstetrics & Gynecology",
+    "11": "Urology",
+    "12": "Orthopedics",
+    "13": "Psychiatry",
+    "14": "Clinical Nutrition",
+    "15": "Physical Medicine & Rehabilitation",
+    "16": "Radiology",
+    "17": "Oncology",
+    "18": "Hematology",
+    "19": "Endocrinology",
+    "20": "Nephrology"
+  }
+}

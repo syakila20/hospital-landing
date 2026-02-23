@@ -1,0 +1,84 @@
+{
+  "brand": {
+    "hospitalName": "RS Sehat Sentosa",
+    "tagline": "Memberikan pelayanan kesehatan yang aman, profesional, dan berorientasi pada keselamatan pasien."
+  },
+  "sections": {
+    "servicesTitle": "Layanan",
+    "informationTitle": "Informasi",
+    "contactTitle": "Hubungi Kami"
+  },
+   "services": {
+    "outpatient": "Rawat Jalan",
+    "inpatient": "Rawat Inap",
+    "emergency": "IGD 24 Jam",
+    "laboratory": "Laboratorium",
+    "pharmacy": "Farmasi"
+  },
+  "information": {
+    "onlineRegistration": "Pendaftaran Online",
+    "doctorSchedule": "Jadwal Dokter",
+    "bpjs": "BPJS Kesehatan",
+    "patientRights": "Hak & Kewajiban Pasien"
+  },
+  "contact": {
+    "address": "Jl. Kesehatan No. 10, Jakarta",
+    "phone": "(021) 1234 5678",
+    "email": "info@rssehatsentosa.id",
+    "emergencyLabel": "IGD & Ambulans 24 Jam"
+  },
+  "navbar": {
+    "about": "Tentang Kami",
+    "blog": "Berita",
+    "career": "Karir",
+    "contact": "Kontak",
+    "customerCare": "Layanan Pelanggan",
+    "hospitalLocation": "Lokasi Rumah Sakit",
+    "emergency": "Layanan Darurat",
+    "findDoctor": "Cari Dokter",
+    "mcu": "Paket MCU"
+  },
+    "trustedPartners": {
+    "title": "Mitra Tepercaya Kami",
+    "description": "Kami bekerja sama dengan perusahaan asuransi terkemuka, mitra korporasi, dan institusi layanan kesehatan untuk memastikan layanan medis yang mudah diakses, berkualitas tinggi, dan terpercaya bagi setiap pasien yang kami layani."
+    },
+  "blog": {
+      "title": "Blog Kesehatan",
+      "description": "Dapatkan tips kesehatan, saran gaya hidup, dan informasi medis terbaru dari para ahli untuk membantu Anda membuat pilihan tepat dan menjalani hidup lebih sehat setiap hari."
+    },
+    "doctor": {
+      "title": "Temukan Dokter yang Tepat",
+      "highlight": "untuk Anda",
+      "description": "Kami hadir untuk membantu Anda menemukan tenaga medis yang peduli dan tepercaya, agar setiap kunjungan terasa nyaman dan aman."
+    },
+    "career": {
+      "title": "Bergabunglah dengan Kami",
+      "description": "Jadilah bagian dari tim yang penuh empati dan berdedikasi untuk memberikan pelayanan terbaik bagi setiap pasien. Kami menghargai kerja sama, integritas, dan inovasi karena setiap langkah kita berarti bagi orang yang kami layani."
+    },
+    "partners": {
+      "title": "Mitra Kami",
+      "description": "Kami bekerja sama dengan perusahaan asuransi, mitra korporasi, dan institusi kesehatan terkemuka untuk memastikan layanan medis berkualitas, mudah diakses, dan dapat diandalkan bagi semua pasien."
+    },
+     "specialties": {
+    "1": "Anak",
+    "2": "Jantung",
+    "3": "Kulit",
+    "4": "Saraf",
+    "5": "Gigi",
+    "6": "Mata",
+    "7": "THT",
+    "8": "Paru",
+    "9": "Bedah",
+    "10": "Kandungan",
+    "11": "Urologi",
+    "12": "Ortopedi",
+    "13": "Psikiatri",
+    "14": "Gizi",
+    "15": "Rehabilitasi",
+    "16": "Radiologi",
+    "17": "Onkologi",
+    "18": "Hematologi",
+    "19": "Endokrin",
+    "20": "Ginjal"
+  }
+}
