@@ -32,7 +32,7 @@ const SvgSort = ({
           stroke="currentColor"
           strokeWidth="1"
           fill="currentColor"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           {" "}
           <g

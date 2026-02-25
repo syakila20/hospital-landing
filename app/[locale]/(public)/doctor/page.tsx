@@ -1,20 +1,7 @@
 "use client";
 
-import {
-  doctorsDummy,
-  mappingSpecialties,
-  dummySpecialties,
-  Doctor,
-} from "@/app/dummyData";
-import DoctorCard from "@/app/components/CardDoctor/CardDoctor";
-import FilterPill from "@/app/components/PillCheckbox/FiterPill";
-import Pagination from "@/app/components/Pagination/Pagination";
-import { usePaginationFilter } from "@/app/library/usePagination";
-import SortDropdown from "@/app/components/Sort/Sort";
-import { useMediaQuery } from "@/app/library/useMediaQuery";
 import { useTranslations } from "next-intl";
-import SvgCircleDown from "@/app/components/Icon/CircleDown";
-import SortData from "./components/SortData";
+
 import ListDoctors from "./components/ListDoctor";
 
 export default function DoctorPage() {

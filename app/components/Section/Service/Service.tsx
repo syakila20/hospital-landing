@@ -90,9 +90,9 @@ const Service = () => {
                     xl:w-40
                     snap-center
                     min-w-[45%] lg:min-w-0
-                    cursor-pointer rounded-xl bg-white transition border
+                    cursor-pointer rounded-xl bg-slate-100/60 transition border
                     flex flex-col
-                    ${activeIndex === index ? "border-blue-500" : "border-transparent"}
+                    ${activeIndex === index ? "border-slate-200" : "border-transparent"}
                   `}
                 >
                   <div className="w-full h-15 p-1 relative ">

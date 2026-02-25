@@ -130,7 +130,7 @@ const HeroSection = () => {
     w-3/4
     left-13
     top-1/4
-    z-20 max-w-xl
+     max-w-xl
     flex flex-col md:flex-row
     items-start gap-4
   "
@@ -166,7 +166,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.4 }}
-        className="absolute bottom-0 lg:right-0 md:right-0 right-0 z-20"
+        className="absolute bottom-0 lg:right-0 md:right-0 right-0"
       >
         <div className="relative bg-white/10 backdrop-blur-md md:h-25 flex">
           <div className="flex flex-col md:h-full w-6 ">

@@ -17,7 +17,7 @@ const SectionTitle = ({ title, linkTo }: ISectionTitle) => {
   };
 
   return (
-    <section className="py-5">
+    <section className="py-10">
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}

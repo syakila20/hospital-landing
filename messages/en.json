@@ -83,5 +83,30 @@
   },
   "appointment": "Appointment & Medical Concierge Center",
   "phone_service_hours": "Phone Service Operating Hours 06:00 - 22:00 WIB",
-  "online_booking": "24-Hour Self-Service Booking via Website"
+  "online_booking": "24-Hour Self-Service Booking via Website",
+      "hero": {
+      "title": "Health & Wellness Blog — Your Guide to a Healthier, Happier Life",
+      "subtitle": "Explore trusted health tips, expert wellness advice, preventive care insights, and the latest medical updates to help you live a healthier lifestyle every day."
+    },
+     "trust": {
+    "title": "Trusted as a National Referral Medical Center",
+    "description": "Supported by highly qualified specialists and modern medical technology.",
+    "doctors": "Subspecialist Doctors",
+    "experience": "Years of Experience",
+    "patients": "Patients per Year",
+    "accreditationValue": "Plenary",
+    "accreditationLabel": "National Accreditation"
+  },
+  "facilities": {
+    "title": "Modern Facilities & Technology",
+    "description": "We provide complete medical facilities with state-of-the-art technology to support the best healthcare services.",
+    "items": {
+      "icu": "ICU 24 Hours",
+      "nicu": "NICU / PICU",
+      "cathlab": "Cath Lab",
+      "mri": "MRI & CT Scan",
+      "hybrid": "Hybrid Operating Room",
+      "lab": "Complete Laboratory"
+    }
+  }
 }

@@ -9,7 +9,6 @@ interface BlogCardProps {
   image: string;
   category: string;
   date: string | Date;
-  key: number;
   slug: string;
 }
 
@@ -19,12 +18,10 @@ export default function BlogCard({
   image,
   category,
   date,
-  key,
   slug,
 }: BlogCardProps) {
   return (
     <motion.article
-      key={key}
       whileHover={{ y: -6 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
       className="relative z-10 group rounded-3xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-lg"

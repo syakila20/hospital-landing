@@ -83,5 +83,30 @@
   },
   "appointment": "Pusat Janji Temu & Layanan Concierge Medis",
   "phone_service_hours": "Jam Operasional Layanan Telepon 06:00 - 22.00 WIB",
-  "online_booking": "Layanan Booking Mandiri 24 jam via Website"
+  "online_booking": "Layanan Booking Mandiri 24 jam via Website",
+   "hero": {
+      "title": "Blog Kesehatan & Wellness — Panduan Hidup Lebih Sehat dan Bahagia",
+      "subtitle": "Temukan tips kesehatan terpercaya, saran gaya hidup sehat dari ahli, wawasan pencegahan penyakit, dan update medis terbaru untuk mendukung hidup sehat Anda setiap hari."
+    },
+     "trust": {
+    "title": "Dipercaya sebagai Pusat Rujukan Kesehatan",
+    "description": "Didukung oleh tenaga medis profesional dan fasilitas modern berstandar nasional.",
+    "doctors": "Dokter Subspesialis",
+    "experience": "Tahun Pengalaman",
+    "patients": "Pasien per Tahun",
+    "accreditationValue": "Paripurna",
+    "accreditationLabel": "Akreditasi Nasional"
+  },
+   "facilities": {
+    "title": "Fasilitas & Teknologi Modern",
+    "description": "Kami menyediakan fasilitas medis lengkap dengan teknologi terkini untuk mendukung pelayanan kesehatan terbaik.",
+    "items": {
+      "icu": "ICU 24 Jam",
+      "nicu": "NICU / PICU",
+      "cathlab": "Cath Lab",
+      "mri": "MRI & CT Scan",
+      "hybrid": "Hybrid Operating Room",
+      "lab": "Laboratorium Lengkap"
+    }
+  }
 }
