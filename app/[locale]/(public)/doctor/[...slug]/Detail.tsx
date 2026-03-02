@@ -5,12 +5,14 @@ import { useEffect } from "react";
 import useDoctorBooking from "../hooks/useGetDoctor";
 import { Doctor } from "@/app/dummyData";
 import Back from "@/app/components/Back/Back";
+import { useTranslations } from "next-intl";
 
 interface Props {
   doctor: Doctor;
 }
 
 const DoctorDetail = ({ doctor }: Props) => {
+  const t = useTranslations("");
   const booking = useDoctorBooking(doctor as Doctor);
 
   // AUTO SELECT FIRST AVAILABLE DATE
@@ -47,7 +49,7 @@ const DoctorDetail = ({ doctor }: Props) => {
               <div className="flex flex-col flex-1">
                 <div className="mb-4">
                   <span className="text-sm px-3 py-1 border border-emerald-500/50 bg-emerald-600 rounded-full text-white">
-                    Available
+                    {t("doctor.detail.available")}
                   </span>
                 </div>
                 <span className="text-2xl lg:text-2xl font-bold text-slate-700 leading-none">
@@ -65,7 +67,9 @@ const DoctorDetail = ({ doctor }: Props) => {
                 key={idx}
                 className="flex flex-col items-center px-3 py-2 bg-white/60 text-slate-600 rounded-md shadow-sm text-sm font-light"
               >
-                <span className="font-semibold">{item?.day}</span>
+                <span className="text-emerald-600">
+                  {t(`hari.${item?.day}`)}
+                </span>
                 <span className="text-xs ">
                   {item?.start} - {item?.end}
                 </span>
@@ -73,7 +77,7 @@ const DoctorDetail = ({ doctor }: Props) => {
             ))}
           </div>
           <span className="text-2xl font-bold text-slate-600">
-            Work Experience
+            {t("doctor.detail.work")}
           </span>
           <div className="relative border-l-2 border-emerald-700 pl-6 pt-5">
             {doctor.experiences.map((exp, index) => (
@@ -127,8 +131,16 @@ const DoctorDetail = ({ doctor }: Props) => {
           {/* Calendar */}
           <div className="mb-4 overflow-x-auto">
             <div className="grid grid-cols-7 gap-2 text-xs text-gray-500 uppercase font-semibold text-center mb-2 min-w-[300px]">
-              {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
-                <div key={day}>{day}</div>
+              {[
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+              ].map((day) => (
+                <div key={day}>{t(`hari.${day}`).slice(0, 3)}</div>
               ))}
             </div>
 

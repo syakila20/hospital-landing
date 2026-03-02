@@ -120,6 +120,7 @@ const ListDoctors = ({ showSearch }: IListDoctors) => {
             rating={doctor.rating}
             image="/doctor.webp"
             slug={doctor.name}
+            spesialitySlug={doctor?.slug}
           />
         ))}
       </div>

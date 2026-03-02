@@ -71,5 +71,10 @@ export function createMetadata({
       description,
       images: [image || `${SITE_URL}${DEFAULT_OG}`],
     },
+    icons: {
+      icon: "/favicon.ico", // default favicon
+      shortcut: "/favicon-32x32.png", // optional shortcut icon
+      apple: "/apple-touch-icon.png", // apple touch icon
+    },
   };
 }

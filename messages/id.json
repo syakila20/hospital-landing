@@ -1,6 +1,6 @@
 {
   "brand": {
-    "hospitalName": "RS Sehat Sentosa",
+    "hospitalName": "RS Sehat Sentosa | Call Center : 1-900-129",
     "tagline": "Memberikan pelayanan kesehatan yang aman, profesional, dan berorientasi pada keselamatan pasien."
   },
   "sections": {
@@ -49,7 +49,12 @@
     "doctor": {
       "title": "Temukan Dokter",
       "highlight": "untuk Anda",
-      "description": "Kami hadir untuk membantu Anda menemukan tenaga medis yang peduli dan tepercaya, agar setiap kunjungan terasa nyaman dan aman."
+      "description": "Kami hadir untuk membantu Anda menemukan tenaga medis yang peduli dan tepercaya, agar setiap kunjungan terasa nyaman dan aman.",
+       "detail" : {
+        "work" :"Pengalaman Bekerja",
+        "available":"Tersedia",
+         "otherDoctors": "Dokter {specialist} Lainnya"
+      }
     },
     "career": {
       "title": "Bergabunglah dengan Kami",
@@ -108,5 +113,14 @@
       "hybrid": "Hybrid Operating Room",
       "lab": "Laboratorium Lengkap"
     }
+  },
+  "hari":{
+     "Monday": "Senin",
+  "Tuesday": "Selasa",
+  "Wednesday": "Rabu",
+  "Thursday": "Kamis",
+  "Friday": "Jumat",
+  "Saturday": "Sabtu",
+  "Sunday": "Minggu"
   }
 }

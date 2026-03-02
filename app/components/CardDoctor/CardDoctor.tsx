@@ -14,6 +14,7 @@ interface Props {
   reviews: number;
   isOnline?: boolean;
   slug: string;
+  spesialitySlug?: string;
 }
 
 export default function DoctorCard({
@@ -22,6 +23,7 @@ export default function DoctorCard({
 
   isOnline,
   slug,
+  spesialitySlug,
 }: Props) {
   return (
     <motion.div
@@ -44,7 +46,9 @@ export default function DoctorCard({
             Available
           </span>
         )}
-        <Link href={`/doctor/${specialty}/${toSlug(slug)}`}>
+        <Link
+          href={`/doctor/${toSlug(spesialitySlug as string)}/${toSlug(slug)}`}
+        >
           <div className="absolute bottom-0 left-0 w-full px-3 py-2 bg-linear-to-t from-blue-400/15 via-white to-white/0">
             <h3 className="text-sm font-semibold text-blue-900 leading-tight">
               {name}

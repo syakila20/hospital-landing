@@ -1,6 +1,6 @@
 {
    "brand": {
-    "hospitalName": "Sehat Sentosa Hospital",
+    "hospitalName": "Sehat Sentosa Hospital | Call Center : 1-900-129",
     "tagline": "Providing safe, professional healthcare services focused on patient safety."
   },
   "sections": {
@@ -49,7 +49,14 @@
     "doctor": {
        "title": "Find Doctor",
       "highlight": "Today",
-      "description": "We help you connect with caring, trusted medical professionals so every visit feels safe and reassuring."
+      "description": "We help you connect with caring, trusted medical professionals so every visit feels safe and reassuring.",
+      "detail" : {
+        "work" :"Work Experience",
+        "available":"Available",
+         "otherDoctors": "Other Doctors {specialist}"
+
+
+      }
     },
     "career": {
       "title": "Join Our Team",
@@ -108,5 +115,14 @@
       "hybrid": "Hybrid Operating Room",
       "lab": "Complete Laboratory"
     }
+  },
+  "hari":{
+     "Monday": "Monday",
+  "Tuesday": "Tuesday",
+  "Wednesday": "Wednesday",
+  "Thursday": "Thursday",
+  "Friday": "Friday",
+  "Saturday": "Saturday",
+  "Sunday": "Sunday"
   }
 }

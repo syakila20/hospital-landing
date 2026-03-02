@@ -7,7 +7,7 @@ export const blogsDummy = [
     slug: "5-cara-menjaga-kesehatan-jantung-sejak-dini",
     excerpt:
       "Menjaga jantung tetap sehat bisa dimulai dari kebiasaan kecil sehari-hari...",
-    image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528",
+    image: "/og.png",
     category: "Jantung",
     date: "2026-01-12",
     rawContent: `
@@ -365,6 +365,7 @@ export interface Doctor {
   schedules: Schedule[];
   education: { degree: string; university: string }[];
   experiences: Experience[];
+  slug?: string;
 }
 
 const names = [
@@ -551,6 +552,7 @@ export const doctorsDummy = names.map((name, i) => {
     reviews: 100 + i * 13,
     schedules: randomSchedule(i),
     image: "/doctor.webp",
+    slug: spec?.slug,
     education: [
       { degree: "S1 Kedokteran", university: "Universitas Indonesia" },
       { degree: spec, university: "Universitas Airlangga" },
